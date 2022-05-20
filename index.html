@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON START -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- FAVICON END -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <title>Paradise City</title>
+  </head>
+  <header>
+    <nav class="menu">
+      <a href="index.html"
+        ><img src="imgs/logo.png" alt="logo-paradisecity"
+      /></a>
+      <ul class="left-menu">
+        <a href="index.html"><li>Home</li></a>
+        <a href="sobre.html"><li>Sobre</li></a>
+        <a href="regras.html"><li>Regras</li></a>
+        <a href="shop.html"><li>Shop</li></a>
+        <a href="contato.html"><li>Contato</li></a>
+      </ul>
+      <ul class="right-menu">
+        <li><i class="fa-solid fa-moon"></i></li>
+        <li><i class="fa-solid fa-user"></i></li>
+      </ul>
+    </nav>
+    <div class="wrappers">
+      <div class="left full-small wrapper">
+        <img src="imgs/logo.png" alt="logo-paradisecity" />
+        <h1>Paradise City</h1>
+        <button id="copyip-btn">Junte-se aos X jogadores online</button>
+      </div>
+      <div class="right full-large wrapper">
+        <div class="wrapper-content flex-center">
+          <p>
+            O futuro já está um passo a frente!
+          </p>
+          <img src="imgs/banner1.png" alt="banner-1-paradise-city" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
     <h1>Hello World</h1>
-</body>
+  </body>
+  <script src="js/copyBtn.js"></script>
 </html>

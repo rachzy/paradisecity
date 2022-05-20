@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Koulen&family=Poppins:wght@200&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeFromRight {
+    0% {
+        margin-left: 300vh;
+    }
+    100% {
+        margin-left: initial;
+    }
+}
+
+/* SIZES */
+
+.full-smaller {
+    width: 30%;
+    height: 100vh;
+}
+
+.full-small {
+    width: 40%;
+    height: 100vh;
+}
+
+.full-medium {
+    width: 50%;
+    height: 100vh;
+}
+
+.full-large {
+    width: 60%;
+    height: 100vh;
+}
+
+.full-larger {
+    width: 70%;
+    height: 100vh;
+}
+
+/* ALIGNMENTS */
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* WRAPPERS */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-content {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+}
+

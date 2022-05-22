@@ -5,11 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FAVICON START -->
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- FAVICON END -->
@@ -38,21 +56,34 @@
         <a href="contato.html"><li>Contato</li></a>
       </ul>
       <ul class="right-menu">
-        <li><i class="fa-solid fa-moon"></i></li>
         <li><i class="fa-solid fa-user"></i></li>
       </ul>
     </nav>
+    <nav class="menu-mobile">
+      <i id="menu-button" class="fa-solid fa-bars"></i>
+      <div id="menu-mobile-container" class="menu-mobile-container full-small unactive">
+        <div>
+          <a href="index.html"><li><i class="fa-solid fa-home"></i> Home</li></a>
+          <a href="sobre.html"><li><i class="fa-solid fa-address-card"></i> Sobre</li></a>
+          <a href="regras.html"><li><i class="fa-solid fa-scale-balanced"></i> Regras</li></a>
+          <a href="shop.html"><li><i class="fa-solid fa-cart-shopping"></i> Shop</li></a>
+          <a href="contato.html"><li><i class="fa-solid fa-envelope"></i> Contato</li></a>
+        </div>
+        <div>
+          <a href="login.html"><li><i class="fa-solid fa-user"></i> Login</li></a> 
+        </div>
+      </div>
+    </nav>
     <div class="wrappers">
-      <div class="left full-small wrapper">
+      <div class="left container full-small wrapper">
         <img src="imgs/logo.png" alt="logo-paradisecity" />
         <h1>Paradise City</h1>
+        <input id="serverip" value="ipdoserver.exemplo.com" hidden />
         <button id="copyip-btn">Junte-se aos X jogadores online</button>
       </div>
-      <div class="right full-large wrapper">
+      <div class="right container full-large wrapper">
         <div class="wrapper-content flex-center">
-          <p>
-            O futuro já está um passo a frente!
-          </p>
+          <p>O futuro já está um passo a frente!</p>
           <img src="imgs/banner1.png" alt="banner-1-paradise-city" />
         </div>
       </div>
@@ -61,5 +92,6 @@
   <body>
     <h1>Hello World</h1>
   </body>
-  <script src="js/copyBtn.js"></script>
+  <script src="lib/copyBtn.js"></script>
+  <script src="lib/menuMobile.js"></script>
 </html>

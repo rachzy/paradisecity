@@ -1,5 +1,7 @@
 /* NAV-MENU */
 
+/* MENU-DESKTOP */
+
 nav.menu {
     position: fixed;
     display: flex;
@@ -17,6 +19,10 @@ nav.menu {
     background-color: rgb(134, 10, 60);
     box-shadow: 2px 4px 4px 4px rgb(206, 6, 129);
     z-index: 9999;
+}
+
+nav.menu-mobile {
+    display: none;
 }
 
 nav.menu img {
@@ -74,4 +80,53 @@ ul.right-menu i {
 
 ul.right-menu i:hover {
     color: aqua;
+}
+
+/* MENU-MOBILE */
+
+@media only screen and (max-width: 580px) {
+    nav.menu {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: flex;
+        padding: 10px;
+    }
+
+    #menu-button {
+        padding: 1vh;
+        position: fixed;
+        font-size: 5vh;
+        z-index: 999999;
+    }
+
+    .menu-mobile-container {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        
+        padding: 10vh 2vh;
+
+        background-color: rgba(15, 15, 15, 0.8);
+        transition: 0.2s all;
+        z-index: 99999;
+    }
+
+    .menu-mobile-container div {
+        margin-bottom: 10vh;
+    }
+
+    .menu-mobile-container.active {
+        left: 0%;
+    }
+
+    .menu-mobile-container a {
+        width: 100%;
+    }
+
+    .menu-mobile-container li {
+        list-style: none;
+        margin-top: 1vh;
+    }
 }

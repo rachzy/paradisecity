@@ -90,7 +90,7 @@ header {
     width: 100%;
 
     background-color: rgba(23, 6, 97, 0.432);
-    -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    -webkit-clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
 
     animation: fadeIn 0.6s ease-in-out;
@@ -110,6 +110,11 @@ header {
 .right img {
     width: 80vh;
     box-shadow: 4px 8px 8px 8px rgb(206, 6, 129);
+    transition: 0.2s all;
+}
+
+.right img:hover {
+    transform: scale(1.1);
 }
 
 

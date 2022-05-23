@@ -65,7 +65,8 @@ ul.left-menu li {
 
 ul.right-menu {
     width: 20%;
-    justify-content: center;
+    padding-right: 5vh;
+    justify-content: end;
 }
 
 ul.right-menu li {

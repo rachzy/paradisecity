@@ -5,6 +5,19 @@
     color: white;
 }
 
+html {
+    background: linear-gradient(153deg, rgba(2,0,36,1) 24%, rgba(4,9,79,1) 80%);
+}
+
+body {
+    background: linear-gradient(153deg, rgba(2,0,36,1) 24%, rgba(4,9,79,1) 80%);
+    margin: 0;
+}
+
+.full-body {
+    height: 100vh;
+}
+
 a {
     cursor: pointer;
     text-decoration: none;
@@ -32,6 +45,11 @@ a {
 
 /* SIZES */
 
+.full {
+    width: 100%;
+    height: 100%;
+}
+
 .full-smaller {
     width: 30%;
     height: 100vh;
@@ -57,6 +75,23 @@ a {
     height: 100vh;
 }
 
+.full-largest {
+    width: 100%;
+    height: 100vh;
+}
+
+/* For full-size page wrappers */
+.full-size {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(153deg, rgba(2,0,36,1) 24%, rgba(4,9,79,1) 80%);
+}
+
 @media only screen and (max-width: 875px) {
     .container {
         width: 100%;
@@ -66,18 +101,39 @@ a {
 
 /* ALIGNMENTS */
 
+.column {
+    flex-direction: column;
+}
+
 .flex-center {
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /* WRAPPERS */
 
+.wrappers {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    height: 100vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 875px) {
+    .wrappers {
+        flex-direction: column;
+    }
+}
+
 .wrapper {
     flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
 }
 
 .wrapper-content {
@@ -86,4 +142,3 @@ a {
     
     width: 100%;
 }
-

@@ -2,6 +2,8 @@ header {
   display: flex;
   flex-direction: column;
 
+  background: transparent;
+
   position: absolute;
   left: 0;
   top: 0;
@@ -10,9 +12,8 @@ header {
   height: 100vh;
 
   justify-content: center;
-
-  background: rgb(2,0,36);
   background: linear-gradient(153deg, rgba(2,0,36,1) 24%, rgba(4,9,79,1) 80%);
+
 }
 
 /* WRAPPERS */
@@ -38,6 +39,7 @@ header {
 /* LEFT WRAPPER */
 
 .left {
+    background: transparent;
     display: flex;
     width: 100%;
     animation: fadeIn 0.2s ease-in-out;
@@ -90,7 +92,7 @@ header {
     width: 100%;
 
     background-color: rgba(23, 6, 97, 0.432);
-    -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    -webkit-clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
 
     animation: fadeIn 0.6s ease-in-out;
@@ -102,14 +104,24 @@ header {
     }
 }
 
+.right div {
+    margin-left: 10%;
+    max-width: 60%;
+}
+
 .right p {
-    font-size: 3vh;
+    font-size: 3.5vh;
     padding: 3vh;
 }
 
 .right img {
-    width: 80vh;
-    box-shadow: 4px 8px 8px 8px rgb(206, 6, 129);
+    width: 60vh;
+    transition: 0.5s all;
+}
+
+.right img:hover {
+    transform: scale(1.1);
+    box-shadow: 2vh 2vh 2vh rgb(206, 6, 129);
 }
 
 
